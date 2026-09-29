@@ -36,12 +36,10 @@ a:hover { color: #103f62; }
 .btn-outline-primary:hover { background: #236b99; border-color: #236b99; }
 .btn:disabled { opacity: 0.7; }
 a:focus-visible, button:focus-visible { outline: 3px solid #216f9f; outline-offset: 3px; }
-/* Cards and image areas: reuse these classes for your real images. */
+/* Cards and responsive portrait */
 .card { border: 1px solid #dbe6ed; border-radius: 0.75rem; overflow: hidden; }
 .card-body { padding: 1.5rem; }
-.profile-placeholder, .profile-image { width: 100%; max-width: 280px; height: 280px; border-radius: 50%; border: 8px solid white; object-fit: cover; }
-.profile-placeholder, .project-placeholder { display: flex; align-items: center; justify-content: center; background: #d8eaf5; color: #385e76; font-weight: 600; }
-.project-placeholder, .project-image { width: 100%; height: 200px; object-fit: cover; }
+.profile-image { display: block; width: 100%; max-width: 320px; height: auto; border-radius: 1rem; border: 6px solid white; object-fit: cover; }
 /* Forms */
 .form-width { max-width: 620px; }
 .form-label { font-weight: 600; }
@@ -61,7 +59,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid #216f9f; outline-offs
 @media (max-width: 575.98px) {
   .hero { padding: 1.5rem 0.5rem; }
   .section-space { margin-top: 2.5rem; }
-  .profile-placeholder, .profile-image { max-width: 220px; height: 220px; }
+  .profile-image { max-width: 240px; }
   .card-body { padding: 1.25rem; }
   .map-container { height: 300px; }
 }
