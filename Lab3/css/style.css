@@ -1,0 +1,31 @@
+:root { font-family: Arial, Helvetica, sans-serif; color: #18324f; background: #f1f6fc; line-height: 1.5; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+.site-header { background: #fff; border-bottom: 1px solid #d8e3ef; }
+nav { max-width: 1000px; margin: auto; padding: 18px 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.brand { color: #1555aa; font-size: 1.35rem; font-weight: bold; }
+.nav-links { display: flex; gap: 20px; }
+a { color: #1555aa; text-underline-offset: 3px; }
+.nav-links a { text-decoration: none; padding: 5px 0; }
+.nav-links a[aria-current="page"] { font-weight: bold; border-bottom: 2px solid #1555aa; }
+main { min-height: calc(100vh - 80px); display: flex; justify-content: center; align-items: center; padding: 40px 20px; }
+.card { width: 100%; max-width: 460px; padding: 32px; background: white; border: 1px solid #d8e3ef; border-radius: 12px; box-shadow: 0 6px 24px #18324f0d; }
+h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 12px; overflow-wrap: anywhere; }
+.intro { color: #53677d; margin: 0 0 24px; }
+.field { margin-bottom: 18px; }
+label { display: block; margin-bottom: 6px; font-weight: bold; font-size: .95rem; }
+input:not([type="hidden"]) { width: 100%; border: 1px solid #a5b8ce; border-radius: 6px; padding: 11px 12px; font: inherit; color: #18324f; background: white; }
+input[aria-invalid="true"] { border-color: #b42318; }
+:focus-visible { outline: 3px solid #80b9ff; outline-offset: 3px; }
+small { display: block; color: #53677d; margin-top: 5px; }
+.field-error { display: block; color: #b42318; font-size: .875rem; margin-top: 5px; }
+.field-error:empty { display: none; }
+button, .button { display: block; width: 100%; border: 0; border-radius: 6px; background: #1555aa; color: white; padding: 12px 16px; font: inherit; font-weight: bold; text-align: center; text-decoration: none; cursor: pointer; }
+button:hover, .button:hover { background: #104386; }
+.form-footer { margin: 22px 0 0; text-align: center; font-size: .95rem; }
+.message { padding: 12px 14px; margin: 0 0 20px; border-radius: 6px; overflow-wrap: anywhere; }
+.message ul { margin: 0; padding-left: 18px; }
+.error { color: #922117; background: #fff0ee; border: 1px solid #efb8b2; }
+.success { color: #156239; background: #edf9f1; border: 1px solid #b5dfc5; }
+.account-email { margin: 0 0 24px; overflow-wrap: anywhere; }
+@media (max-width: 480px) { nav { padding: 14px 18px; } .nav-links { gap: 14px; } main { padding: 24px 14px; align-items: flex-start; } .card { padding: 24px 20px; } }
